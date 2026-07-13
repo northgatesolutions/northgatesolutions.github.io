@@ -467,21 +467,33 @@ main {
 }
 
 .tech-orb-center {
-  width: 40%;
-  height: 40%;
-  background: radial-gradient(circle, rgba(0, 242, 254, 0.4) 0%, rgba(0, 118, 255, 0.05) 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44%;
+  height: 44%;
+  background: #ffffff;
   border-radius: 50%;
-  box-shadow: 0 0 40px rgba(0, 242, 254, 0.3);
+  border: 2px solid var(--accent-cyan);
+  box-shadow: 0 0 35px rgba(0, 242, 254, 0.45);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
+  animation: floatCenter 6s ease-in-out infinite;
 }
 
 .tech-logo-icon {
-  width: 55%;
-  height: 55%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
-  animation: float 4s ease-in-out infinite;
+  border-radius: 50%;
+}
+
+@keyframes floatCenter {
+  0% { transform: translate(-50%, -50%) translateY(0px) scale(1); }
+  50% { transform: translate(-50%, -50%) translateY(-8px) scale(1.03); }
+  100% { transform: translate(-50%, -50%) translateY(0px) scale(1); }
 }
 
 .node-item {
