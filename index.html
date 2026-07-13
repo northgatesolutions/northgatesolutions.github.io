@@ -559,20 +559,26 @@
         <!-- Contact Form Right -->
         <div class="glass-container">
           <form class="contact-form" id="contactForm">
+            <!-- Web3Forms Configuration -->
+            <!-- Step 1: Replace "YOUR_ACCESS_KEY_HERE" with your free key from https://web3forms.com -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="hidden" name="subject" value="New Website Inquiry - Northgate Solutions">
+            <input type="hidden" name="from_name" value="Northgate Solutions Web Inquiry">
+            
             <div class="form-row">
               <div class="input-group">
                 <label for="clientName">Your Name *</label>
-                <input type="text" id="clientName" class="form-input" placeholder="e.g. John Active" required>
+                <input type="text" id="clientName" name="name" class="form-input" placeholder="e.g. John Active" required>
               </div>
               <div class="input-group">
                 <label for="clientEmail">Email Address *</label>
-                <input type="email" id="clientEmail" class="form-input" placeholder="e.g. john.active@domain.com" required>
+                <input type="email" id="clientEmail" name="email" class="form-input" placeholder="e.g. john.active@domain.com" required>
               </div>
             </div>
             
             <div class="input-group">
               <label for="clientService">Core Need</label>
-              <select id="clientService" class="form-select">
+              <select id="clientService" name="service" class="form-select">
                 <option value="gateways">API Gateway / Edge Ingress</option>
                 <option value="microservices">Microservices / K8s Deployment</option>
                 <option value="ai">AI Agents / LLM Orchestration</option>
@@ -582,7 +588,7 @@
 
             <div class="input-group">
               <label for="clientMessage">Message Details *</label>
-              <textarea id="clientMessage" class="form-textarea" placeholder="Describe your architecture requirements..." required></textarea>
+              <textarea id="clientMessage" name="message" class="form-textarea" placeholder="Describe your architecture requirements..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-accent" id="submitFormBtn">

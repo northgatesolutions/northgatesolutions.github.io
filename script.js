@@ -169,21 +169,53 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
       document.head.appendChild(style);
 
-      // Simulate API post (1.5 seconds)
-      setTimeout(() => {
-        // Reset button
+      // Send the real request to Web3Forms API
+      const formData = new FormData(contactForm);
+      const json = JSON.stringify(Object.fromEntries(formData));
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+      .then(async (response) => {
+        const result = await response.json();
+        if (response.status === 200) {
+          // Show Glassmorphic Success Modal
+          if (modalOverlay) {
+            modalOverlay.classList.add('active');
+          }
+          // Reset form
+          contactForm.reset();
+          calculateROI(); // recalculate defaults if needed
+        } else {
+          // Check if it's the default placeholder key
+          const accessKeyInput = contactForm.querySelector('input[name="access_key"]');
+          if (accessKeyInput && accessKeyInput.value === 'YOUR_ACCESS_KEY_HERE') {
+            alert('Form submission simulated, but no email was sent because the Web3Forms Access Key is still "YOUR_ACCESS_KEY_HERE". Please register a free access key at web3forms.com and paste it in index.html (line 563) to receive real emails.');
+            // Still show success modal for frontend testing purposes
+            if (modalOverlay) {
+              modalOverlay.classList.add('active');
+            }
+            contactForm.reset();
+            calculateROI();
+          } else {
+            alert(result.message || 'Form submission failed. Please try again.');
+          }
+        }
+      })
+      .catch((error) => {
+        console.error('Error during form submission:', error);
+        alert('A network error occurred while submitting the form. Please check your internet connection and try again.');
+      })
+      .finally(() => {
+        // Reset button state
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnHtml;
-
-        // Show Glassmorphic Success Modal
-        if (modalOverlay) {
-          modalOverlay.classList.add('active');
-        }
-
-        // Reset form
-        contactForm.reset();
-        calculateROI(); // recalculate defaults if needed
-      }, 1500);
+      });
     });
   }
 
