@@ -1,10 +1,616 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Northgate Solutions</title>
-  </head>
-  <body>
-    <h1>Welcome to Northgate Solutions</h1>
-    <p>Our website is coming soon!</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Northgate Solutions LLC - Leader in Enterprise API Gateways, Resilient Microservices, and AI-Driven Automation Systems. Virginia-based cloud-native development.">
+  <meta name="keywords" content="API Gateway, Microservices, AI Automation, Intelligent Systems, Cloud-Native, Virginia Tech, Software Architect, gRPC, Kubernetes">
+  <meta name="author" content="Northgate Solutions LLC">
+  <title>Northgate Solutions LLC | AI, Automation, API Gateways & Microservices</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/Icon-Scaled.png">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Animated Mesh Gradients -->
+  <div class="background-grid">
+    <div class="background-glow-1"></div>
+    <div class="background-glow-2"></div>
+    <div class="background-grid-pattern"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header id="siteHeader">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#" class="logo-link" id="navLogoLink">
+        <img src="assets/Logo-Wide.png" alt="Northgate Solutions Logo" class="logo-img" onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='inline-block'">
+        <span class="logo-text" id="logoFallback" style="display:none;">Northgate<span>Solutions</span></span>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#" class="nav-link" id="navLinkHome">Home</a></li>
+        <li><a href="#solutions" class="nav-link" id="navLinkSolutions">Solutions</a></li>
+        <li><a href="#sizing-calculator" class="nav-link" id="navLinkCalculator">Sizing & Savings</a></li>
+        <li><a href="#portfolio" class="nav-link" id="navLinkPortfolio">Interfaces</a></li>
+        <li><a href="#about" class="nav-link" id="navLinkAbout">About Us</a></li>
+        <li class="nav-cta"><a href="#contact" class="btn btn-primary" id="navContactBtn">Get in Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Next-Gen Architecture Active</span>
+          </div>
+          <h1 class="hero-title gradient-text">Architecting the Gateway to Enterprise Intelligence</h1>
+          <p class="hero-subtitle">
+            Northgate Solutions LLC builds high-performance, secure API Gateways, resilient cloud-native microservices, and AI-driven automation systems. We transition legacy infrastructures into scalable, self-healing digital ecosystems.
+          </p>
+          <div class="hero-actions">
+            <a href="#solutions" class="btn btn-accent" id="heroExploreBtn">Explore Solutions</a>
+            <a href="#contact" class="btn btn-secondary" id="heroContactBtn">Consult Our Architects</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>&lt;10<span>ms</span></h3>
+              <p>Gateway Ingress Latency</p>
+            </div>
+            <div class="stat-item">
+              <h3>99.99<span>%</span></h3>
+              <p>Service Mesh Uptime</p>
+            </div>
+            <div class="stat-item">
+              <h3>10x<span>+</span></h3>
+              <p>Process Automation ROI</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Interactive Technical Graphic -->
+        <div class="hero-visual">
+          <div class="tech-orb-container">
+            <div class="tech-orb">
+              <div class="tech-orb-inner"></div>
+            </div>
+            <div class="tech-orb-center">
+              <img src="assets/Icon-Scaled.png" alt="Northgate Icon" class="tech-logo-icon">
+            </div>
+            <!-- Orbiting Nodes representing Microservices, AI, Automation, Gateways -->
+            <div class="node-item node-1" title="API Gateways">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="#00f2fe" stroke-width="2" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="node-item node-2" title="Microservices">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="#0076ff" stroke-width="2" fill="none"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <div class="node-item node-3" title="AI Agents">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="#8a2be2" stroke-width="2" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <div class="node-item node-4" title="Automation Engines">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="#a4aebb" stroke-width="2" fill="none"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Solutions Section -->
+    <section id="solutions">
+      <div class="section-header">
+        <span class="section-label">Enterprise Technology</span>
+        <h2 class="section-title">Core Architecture Competence</h2>
+        <p class="section-desc">
+          We engineer high-performance systems designed to meet modern security compliance, massive throughput demands, and complex intelligent routing.
+        </p>
+      </div>
+
+      <div class="solutions-grid">
+        <!-- Solution 1: Gateways -->
+        <article class="glass-container solution-card" id="solutionGateways">
+          <div class="solution-icon-box">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3 class="solution-title">Enterprise API Gateways</h3>
+          <p class="solution-desc">
+            We build high-availability ingress systems, reverse proxies, and edge controllers designed to handle millions of concurrent connections with sub-millisecond overhead.
+          </p>
+          <ul class="solution-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Rate Limiting & Throttle Controls
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              mTLS, OAuth2 & OpenID Identity
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Global Load Balancing & Failover
+            </li>
+          </ul>
+          <a href="#contact" class="solution-link" id="gatewayLearnBtn">
+            Request Architecture Design 
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <!-- Solution 2: AI & Automation -->
+        <article class="glass-container solution-card" id="solutionAI">
+          <div class="solution-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v12"/><path d="M8 10h8"/><path d="M8 14h8"/></svg>
+          </div>
+          <h3 class="solution-title">Intelligent AI & Automation</h3>
+          <p class="solution-desc">
+            Implementing cognitive workflows, natural language orchestrators, and AI agents that interface with your existing database schemas to run operations automatically.
+          </p>
+          <ul class="solution-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Autonomous Agent Workflows
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Semantic Vector Database Design
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              LLM Orchestration & RAG Pipelines
+            </li>
+          </ul>
+          <a href="#contact" class="solution-link" id="aiLearnBtn">
+            Deploy AI Orchestrators 
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <!-- Solution 3: Microservices -->
+        <article class="glass-container solution-card" id="solutionMicroservices">
+          <div class="solution-icon-box">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3 class="solution-title">Cloud-Native Microservices</h3>
+          <p class="solution-desc">
+            We develop distributed systems using modern, lightweight architectures in Go, Rust, and Python. Containerized by Docker and orchestrated via Kubernetes.
+          </p>
+          <ul class="solution-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              gRPC, Protobuf & HTTP/3 Backends
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Kafka & Event-Driven Message Brokers
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Auto-Scaling & Self-Healing Meshes
+            </li>
+          </ul>
+          <a href="#contact" class="solution-link" id="microservicesLearnBtn">
+            Build Microservice Mesh 
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+      </div>
+
+      <!-- Advanced Technical Grid -->
+      <div class="tech-capabilities">
+        <div class="capabilities-visual">
+          <div class="mesh-container">
+            <div class="mesh-row">
+              <div class="mesh-node active">Client Request</div>
+              <div class="mesh-node active">Secure Gateway Ingress</div>
+            </div>
+            <div class="mesh-line-horizontal"></div>
+            <div class="mesh-line-vertical"></div>
+            <div class="mesh-row">
+              <div class="mesh-node">Auth Service</div>
+              <div class="mesh-node active">AI Routing Router</div>
+              <div class="mesh-node">Cache Service</div>
+            </div>
+            <div class="mesh-row">
+              <div class="mesh-node active">Database Worker</div>
+              <div class="mesh-node active">Automation Agent</div>
+              <div class="mesh-node active">Event Queue</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="capabilities-text">
+          <h3 class="gradient-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Resilient Architecture Capabilites</h3>
+          <p style="margin-bottom: 2rem;">
+            Whether implementing zero-trust authentication protocols at your edge gateway or dividing database transactions into optimized, decoupled event queues, we deliver highly reliable infrastructures that remove bottlenecks.
+          </p>
+          <div class="capabilities-list">
+            <div class="capability-item">
+              <h4>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Zero-Trust Gateways
+              </h4>
+              <p>Secure OAuth2 tokens and JWT validations executed at the edge.</p>
+            </div>
+            <div class="capability-item">
+              <h4>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                Sub-Millisecond Engine
+              </h4>
+              <p>Highly optimized binary serializations like gRPC and Protobuf.</p>
+            </div>
+            <div class="capability-item">
+              <h4>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Agentic Workflows
+              </h4>
+              <p>State machines configured to dynamically scale tasks without code modifications.</p>
+            </div>
+            <div class="capability-item">
+              <h4>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                Optimized Compute Cost
+              </h4>
+              <p>Container orchestrations that automatically scale down during off-peak hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & ROI Sizing Calculator -->
+    <section id="sizing-calculator">
+      <div class="section-header">
+        <span class="section-label">Infrastructure Sizer</span>
+        <h2 class="section-title">Interactive Architectural Estimator</h2>
+        <p class="section-desc">
+          Drag the sliders below to model your system requirements. Our calculator projects hardware nodes, gateway pod configurations, and estimated resource hours saved.
+        </p>
+      </div>
+
+      <div class="glass-container calculator-box">
+        <div class="calc-grid">
+          <!-- Inputs Column -->
+          <div class="calc-inputs">
+            
+            <!-- Input 1: Microservices -->
+            <div class="form-group">
+              <label for="servicesRange">
+                Target Microservices
+                <span class="range-value"><span id="servicesVal">12</span> Services</span>
+              </label>
+              <input type="range" id="servicesRange" min="2" max="100" value="12" step="1">
+            </div>
+
+            <!-- Input 2: Traffic -->
+            <div class="form-group">
+              <label for="trafficRange">
+                Daily API Traffic
+                <span class="range-value"><span id="trafficVal">2.5</span>M Req/Day</span>
+              </label>
+              <input type="range" id="trafficRange" min="0.1" max="50" value="2.5" step="0.1">
+            </div>
+
+            <!-- Input 3: Workflows -->
+            <div class="form-group">
+              <label for="workflowsRange">
+                AI Automated Workflows
+                <span class="range-value"><span id="workflowsVal">4</span> Active Flows</span>
+              </label>
+              <input type="range" id="workflowsRange" min="0" max="30" value="4" step="1">
+            </div>
+
+          </div>
+
+          <!-- Outputs Card -->
+          <div class="calc-results">
+            <div class="calc-result-number" id="resultSavings">$0</div>
+            <div class="calc-result-label">Estimated Monthly Value</div>
+            
+            <div class="calc-breakdown">
+              <div class="breakdown-row">
+                <span class="breakdown-label">Engineering Hours Saved</span>
+                <span class="breakdown-val" id="resultHours">0 hrs</span>
+              </div>
+              <div class="breakdown-row">
+                <span class="breakdown-label">Gateway Replica Pods</span>
+                <span class="breakdown-val" id="resultPods">2 Pods</span>
+              </div>
+              <div class="breakdown-row">
+                <span class="breakdown-label">Recommended K8s Nodes</span>
+                <span class="breakdown-val" id="resultNodes">3 Nodes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section with iPhone Screenshot Mockups -->
+    <section id="portfolio" class="portfolio-showcase">
+      <div class="section-header">
+        <span class="section-label">Systems Showcase</span>
+        <h2 class="section-title">Production UI & Monitoring Hubs</h2>
+        <p class="section-desc">
+          Take a look at the interfaces designed for our live cloud gateways and real-time automation microservice monitors.
+        </p>
+      </div>
+
+      <!-- Phone Mockups Container -->
+      <div class="portfolio-slider-container">
+        
+        <!-- Phone 1 -->
+        <div class="phone-container">
+          <div class="phone-mockup">
+            <div class="phone-notch">
+              <div class="notch-speaker"></div>
+              <div class="notch-camera"></div>
+            </div>
+            <div class="phone-screen">
+              <img src="assets/IMG_2802.png" alt="Gateway Dashboard Screenshot">
+            </div>
+          </div>
+          <div class="phone-label">
+            <h4>Edge Ingress Monitor</h4>
+            <p>Traffic logs & real-time analytics</p>
+          </div>
+        </div>
+
+        <!-- Phone 2 -->
+        <div class="phone-container">
+          <div class="phone-mockup">
+            <div class="phone-notch">
+              <div class="notch-speaker"></div>
+              <div class="notch-camera"></div>
+            </div>
+            <div class="phone-screen">
+              <img src="assets/IMG_2803.png" alt="Automation Workflow screenshot">
+            </div>
+          </div>
+          <div class="phone-label">
+            <h4>AI Agent Orchestrator</h4>
+            <p>Dynamic process mapping & prompts</p>
+          </div>
+        </div>
+
+        <!-- Phone 3 -->
+        <div class="phone-container">
+          <div class="phone-mockup">
+            <div class="phone-notch">
+              <div class="notch-speaker"></div>
+              <div class="notch-camera"></div>
+            </div>
+            <div class="phone-screen">
+              <img src="assets/IMG_2804.png" alt="Microservice Cluster Status">
+            </div>
+          </div>
+          <div class="phone-label">
+            <h4>K8s Mesh Observer</h4>
+            <p>Service latency & load ratios</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-label" style="display:inline-block; margin-bottom:1rem;">Our Organization</span>
+          <h2>The Northgate Architecture Standard</h2>
+          <p>
+            Founded in the Commonwealth of Virginia in July 2026, Northgate Solutions LLC was structured to bridge the operational gap between legacy server workloads and modern AI-driven cloud topologies. We are a member-managed technical consultancy specializing in edge security routing, autonomous systems integrations, and decoupled microservice patterns.
+          </p>
+          <p>
+            We don't just write scripts. We establish modular, secure, and self-documenting architectures that enable scaling without developer gridlock. From microsecond gRPC transports to vector-search agentic chains, we deliver the gateway to your business's tomorrow.
+          </p>
+          
+          <div class="about-stats-grid">
+            <div class="about-stat-card">
+              <h4>Virginia LLC</h4>
+              <p>Registered Entity #12042091</p>
+            </div>
+            <div class="about-stat-card">
+              <h4>Member-Managed</h4>
+              <p>Technical leadership at the core</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glass container displaying certification/core traits -->
+        <div class="glass-container" style="display:flex; flex-direction:column; justify-content:center; gap:2rem;">
+          <h3 class="gradient-accent-text" style="font-size:1.8rem;">Architectural Principles</h3>
+          
+          <div class="trait-item" style="display:flex; gap:1.25rem;">
+            <div class="contact-icon" style="flex-shrink:0;">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="#00f2fe" stroke-width="2" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4 style="font-size:1.1rem; margin-bottom:0.25rem;">Zero-Trust Defaults</h4>
+              <p style="font-size:0.85rem; color:var(--text-muted);">Every API boundary is authenticated, audited, and rate-limited out-of-the-box.</p>
+            </div>
+          </div>
+
+          <div class="trait-item" style="display:flex; gap:1.25rem;">
+            <div class="contact-icon" style="flex-shrink:0;">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="#0076ff" stroke-width="2" fill="none"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div>
+              <h4 style="font-size:1.1rem; margin-bottom:0.25rem;">Telemetry Observable</h4>
+              <p style="font-size:0.85rem; color:var(--text-muted);">Deep instrumentation via OpenTelemetry to capture performance traces before they affect clients.</p>
+            </div>
+          </div>
+
+          <div class="trait-item" style="display:flex; gap:1.25rem;">
+            <div class="contact-icon" style="flex-shrink:0;">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="#8a2be2" stroke-width="2" fill="none"><path d="M16.5 9.4 7.55 4.24a1.79 1.79 0 0 0-2.5 1.52v12.48a1.79 1.79 0 0 0 2.5 1.52l8.95-5.16a1.79 1.79 0 0 0 0-3.04Z"/></svg>
+            </div>
+            <div>
+              <h4 style="font-size:1.1rem; margin-bottom:0.25rem;">Decoupled Adaptability</h4>
+              <p style="font-size:0.85rem; color:var(--text-muted);">Independent deployable microservices designed so changes to one do not cascade to others.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Details Section (No Address) -->
+    <section id="contact">
+      <div class="contact-grid">
+        <!-- Contact Details Left -->
+        <div class="contact-info-panel">
+          <span class="section-label">Get in Touch</span>
+          <h3>Initiate an Architecture Review</h3>
+          <p>
+            Ready to secure your gateways, model intelligent AI pipelines, or audit your Kubernetes microservices? Reach out to us. We typically follow up with an initial design proposal within one business day.
+          </p>
+          <div class="contact-methods">
+            <div class="contact-method-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-text">
+                <h5>Email Inquiry</h5>
+                <p><a href="mailto:info@northgatesolutions.net" id="emailContactLink">info@northgatesolutions.net</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-method-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-text">
+                <h5>Call Support</h5>
+                <p><a href="tel:+18043719733" id="phoneContactLink">+1 (804) 371-9733</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Right -->
+        <div class="glass-container">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="input-group">
+                <label for="clientName">Your Name *</label>
+                <input type="text" id="clientName" class="form-input" placeholder="e.g. Anmar Zubaydi" required>
+              </div>
+              <div class="input-group">
+                <label for="clientEmail">Email Address *</label>
+                <input type="email" id="clientEmail" class="form-input" placeholder="e.g. anmar@domain.com" required>
+              </div>
+            </div>
+            
+            <div class="input-group">
+              <label for="clientService">Core Need</label>
+              <select id="clientService" class="form-select">
+                <option value="gateways">API Gateway / Edge Ingress</option>
+                <option value="microservices">Microservices / K8s Deployment</option>
+                <option value="ai">AI Agents / LLM Orchestration</option>
+                <option value="audit">Architecture Audit & Sizing</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="clientMessage">Message Details *</label>
+              <textarea id="clientMessage" class="form-textarea" placeholder="Describe your architecture requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-accent" id="submitFormBtn">
+              Submit Request
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Success Modal Overlay -->
+  <div class="modal-overlay" id="successModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="glass-container success-modal">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h4 id="modalTitle">System Ingress Success</h4>
+      <p>Thank you. Your message has bypassed rate-limits and successfully logged. An architect will reach out shortly.</p>
+      <button class="btn btn-primary" id="closeModal">Acknowledge</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-logo-panel">
+        <a href="#" class="logo-link">
+          <img src="assets/Logo-Slim.png" alt="Northgate Solutions Logo" class="logo-img" onerror="this.style.display='none'">
+        </a>
+        <p>Architecting secure, modular, and AI-driven cloud solutions for next-gen enterprises.</p>
+      </div>
+      
+      <div class="footer-nav-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#solutions" id="footLinkGateways">API Gateways</a></li>
+          <li><a href="#solutions" id="footLinkMicro">Microservices</a></li>
+          <li><a href="#solutions" id="footLinkAI">AI Agents</a></li>
+          <li><a href="#solutions" id="footLinkSecurity">Security / mTLS</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about" id="footLinkAbout">About Us</a></li>
+          <li><a href="#portfolio" id="footLinkShowcase">Production UI</a></li>
+          <li><a href="#sizing-calculator" id="footLinkSizer">Sizer Calculator</a></li>
+          <li><a href="#contact" id="footLinkContact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col footer-newsletter">
+        <h4>Stay Connected</h4>
+        <p>Subscribe to our technical architecture digests and microservice updates.</p>
+        <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Subscribed!'); this.reset();">
+          <input type="email" class="newsletter-input" placeholder="architect@domain.com" aria-label="Email Address for newsletter" required>
+          <button type="submit" class="newsletter-btn" id="newsletterSubmitBtn">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copyright" id="footerCopyrightText">
+        &copy; 2026 Northgate Solutions LLC. Registered in Virginia. All rights reserved.
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/northgatesolutions" class="social-link" aria-label="Northgate Github Repository" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.479C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+        <a href="https://linkedin.com/company/northgatesolutions" class="social-link" aria-label="Northgate LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
 </html>
